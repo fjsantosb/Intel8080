@@ -19,7 +19,7 @@ Intel8080 = function () {
 	this.parity = 0x00;
 	this.carry = 0x00;
 	this.halfcarry = 0x00;
-    this.interrupt = {enabled: 0x01, type: 0x08};
+    	this.interrupt = {enabled: 0x01, type: 0x08};
 	this.crash = 0x00;
 
 	this.memory = [];
