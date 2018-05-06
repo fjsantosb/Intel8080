@@ -6,5 +6,8 @@ html, body{
 canvas {
 	background-color: #000;
 	border-radius: 10px;
-	outline: none;
+    outline: none;
+    width: 448px;
+    height: 512px;
+    image-rendering: pixelated;
 }
