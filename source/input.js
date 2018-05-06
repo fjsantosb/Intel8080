@@ -2,7 +2,7 @@
  * @author  Francisco Santos Belmonte <fjsantosb@moleculejs.net>
  */
 
-Input = function () {
+INTEL8080.Input = function () {
 
     this.key = [];
     
@@ -20,7 +20,7 @@ Input = function () {
     }).bind(this);
 };
 
-Input.prototype = {
+INTEL8080.Input.prototype = {
 
     keyDown: function (e) {
         e.preventDefault();

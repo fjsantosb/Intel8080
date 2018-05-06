@@ -2,13 +2,13 @@
  * @author	Francisco Santos Belmonte <fjsantosb@gmail.com>
  */
 
-Display = function () {
+INTEL8080.Display = function () {
     this.canvas = document.getElementById('emulator');
     this.context = this.canvas.getContext('2d');
     this.context.fillStyle = '#ffffff';
 };
 
-Display.prototype = {
+INTEL8080.Display.prototype = {
     clear: function () {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     },
