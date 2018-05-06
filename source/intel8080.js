@@ -6,6 +6,7 @@ var INTEL8080 = function() {
     this.cpu = new INTEL8080.Cpu();
     this.display = new INTEL8080.Display();
     this.input = new INTEL8080.Input();
+    this.touch = new INTEL8080.Touch();
 };
 
 INTEL8080.prototype = {
@@ -21,7 +22,8 @@ INTEL8080.prototype = {
     run: function() {
         for (var i = 0; i < 2; i++) {
             while (this.cpu.cycles < (2000000 / 120)) {
-                this.input.update(this.cpu.inPort);
+                //this.input.update(this.cpu.inPort);
+                this.touch.update(this.cpu.inPort);
                 this.cpu.run();
             }
             this.cpu.executeInterrupt();

@@ -1,13 +1,11 @@
 html, body{
-    background-color: #aaa;
+    background-color: #000;
     text-align: center;
     font-family: 'Anton';
+    margin: 0px;
 }
 canvas {
 	background-color: #000;
-	border-radius: 10px;
-    outline: none;
-    width: 448px;
-    height: 512px;
+    width: 100%;
     image-rendering: pixelated;
 }

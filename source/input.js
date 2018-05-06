@@ -21,7 +21,6 @@ INTEL8080.Input = function () {
 };
 
 INTEL8080.Input.prototype = {
-
     keyDown: function (e) {
         e.preventDefault();
         this.key[e.keyCode] = true;
